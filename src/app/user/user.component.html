@@ -1,0 +1,6 @@
+<div class="col-xs-6 offset-3">
+    <label for="username">Username</label>
+    <input type="text" [(ngModel)]="username">
+    <p>{{ username }}</p>
+    <button class="btn btn-primary" (click)="resetUsername()" [disabled]="userNameIsEmpty()">Reset</button>
+</div>
