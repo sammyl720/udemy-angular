@@ -1,0 +1,9 @@
+<button (click)="toggleDetails()" class='btn btn-primary'>
+    Display Details
+</button>
+<p *ngIf="detailStatus">Secret Password = tuna</p>
+
+<div *ngFor="let click of clicks">
+    <p [ngStyle]="{ backgroundColor: moreThenFour(click)}" [ngClass]="{ light: click > 4 }">Button was clicked {{ click }} times.</p>
+
+</div>
